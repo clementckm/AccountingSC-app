@@ -1,0 +1,51 @@
+{{#if investor}}
+  <tr>
+    <td class="content-block">
+      <h3>You have been invited as an investor</h3>
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      <p>Hello{{#if firstName}} {{firstName}}{{/if}},</p>
+      <p>You have been invited {{#if inviteFrom}}by <strong>{{inviteFrom}}</strong>{{/if}} to become a investor in <strong>{{companyName}}</strong></p>
+      <p>Click the button below to access the company's dashboard and review their proposal.</p>
+    </td>
+  </tr>
+  {{#if referral}}
+  <tr>
+    <td class="content-block">
+      <strong>Personal message by the director:</strong><br/>{{referral}}
+    </td>
+  </tr>
+  {{/if}}
+  <tr>
+    <td class="content-block">
+        <a href="{{btn_url}}" class="btn-primary">Access dashboard</a>
+      </td>
+  </tr>
+{{else}}
+  <tr>
+    <td class="content-block">
+      <h3>Invite to become a {{roleFormatted}}</h3>
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block">
+      <p>Hello{{#if firstName}} {{firstName}}{{/if}},</p>
+      <p>You have been invited {{#if inviteFrom}}by <strong>{{inviteFrom}}</strong> {{/if}}to become a {{roleFormatted}} in <strong>{{companyName}}</strong></p>
+      <p>Click the button below to access the company's dashboard and activate your share wallet.</p>
+    </td>
+  </tr>
+  {{#if referral}}
+  <tr>
+    <td class="content-block">
+      <strong>Personal message:</strong><br/>{{referral}}
+    </td>
+  </tr>
+  {{/if}}
+  <tr>
+    <td class="content-block">
+        <a href="{{btn_url}}" class="btn-primary">Access dashboard</a>
+      </td>
+  </tr>
+{{/if}}

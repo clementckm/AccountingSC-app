@@ -1,0 +1,21 @@
+<tr>
+  <td class="content-block">
+    <h3>You have been invited to the {{companyName}} dashboard</h3>
+  </td>
+</tr>
+<tr>
+  <td class="content-block">
+    <p>Hello {{firstName}},</p>
+    {{#if invitedBy}}
+      <p>You have been invited by <strong>{{invitedBy}}</strong> to join <strong>{{companyName}}</strong> as a {{role}}.</p>
+    {{else}}
+      <p>You have been invited to join <strong>{{companyName}}</strong> as a <strong>{{role}}</strong>.</p>
+    {{/if}}
+    <p>Click the button below to access the company’s dashboard and get more details.</p>
+  </td>
+</tr>
+<tr>
+  <td class="content-block">
+    <a href="{{btn_url}}" class="btn-primary">Access dashboard</a>
+  </td>
+</tr>

@@ -1,0 +1,24 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+import React from 'react';
+
+import { FormattedMessage, IntlProvider } from 'react-intl';
+import messages from './messages';
+import { translationMessages } from './translations';
+
+function {{ properCase name }}() {
+  const currentLocale = Session.get('currentLocale') || 'en';
+  return (
+    <IntlProvider locale={ currentLocale } key={ currentLocale } messages={ translationMessages[currentLocale] }>
+      <div>
+        <FormattedMessage {...messages.header} />
+      </div>
+    </IntlProvider>
+  );
+}
+
+export default {{ properCase name }};

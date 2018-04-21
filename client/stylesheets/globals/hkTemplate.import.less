@@ -1,0 +1,671 @@
+.hkTemplate {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+.hkTemplate article, .hkTemplate aside, .hkTemplate details, .hkTemplate figcaption, .hkTemplate figure,
+footer, .hkTemplate header, .hkTemplate hgroup, .hkTemplate menu, .hkTemplate nav, .hkTemplate section {
+	display: block;
+}
+
+.hkTemplate  body {
+	line-height: 1;
+}
+
+.hkTemplate  ol, .hkTemplate ul {
+	list-style: none;
+}
+
+.hkTemplate  blockquote, .hkTemplate q {
+	quotes: none;
+}
+
+.hkTemplate  blockquote:before, .hkTemplate blockquote:after,
+q:before, .hkTemplate q:after {
+	content: '';
+	content: none;
+}
+
+.hkTemplate  table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@page {
+	size: A4 portrait;
+	margin: 0;
+}
+
+.hkTemplate  {
+    margin: 0;
+    padding: 0;
+    font: 10pt "Arial";
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.hkTemplate  .page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 0.89cm 0.89cm 0.51cm 2.54cm;
+    margin: 0.5cm;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.hkTemplate  .page_note {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 1.44cm 2.03cm 1.44cm 2.03cm;
+    margin: 0.5cm;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media print {
+    .hkTemplate .page, .hkTemplate .page_note {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+/************ General styling ****************/
+
+.hkTemplate h1 {
+	font-size: 13pt;
+	line-height: 21px;
+}
+
+.hkTemplate  h2, .hkTemplate .font_12px, .hkTemplate .form-sign, .hkTemplate .input_full_width, .hkTemplate .page_note p {
+	font-size: 12pt;
+	margin-bottom: 14px;
+}
+
+.hkTemplate h1, .hkTemplate h3, .hkTemplate h4, .hkTemplate h5, .hkTemplate h6, .hkTemplate .font_11px > span, .hkTemplate .font_12px > span, .hkTemplate .font_10px > span, .hkTemplate .font_9px > span, .hkTemplate label > span, .hkTemplate .c_i_num, .hkTemplate #form_sign_strong {
+	font-weight: bold;
+}
+
+.hkTemplate #form_sign_strong {
+	line-height: 13pt;
+	height: inherit;
+}
+
+.hkTemplate h3, .hkTemplate .font_11px, .hkTemplate ol, .hkTemplate ul, .hkTemplate li {
+	font-size: 11pt;
+}
+
+.hkTemplate h4, .hkTemplate .font_10px, .hkTemplate .narrow_box, .hkTemplate  .company_input_num, .hkTemplate  .table_notice {
+	font-size: 10pt;
+}
+
+.hkTemplate h5, .hkTemplate .main_label, .hkTemplate .ch_en_names, .hkTemplate .font_9px, .hkTemplate .box, .hkTemplate .yes-no-checkbox, .hkTemplate .presentor_input, .hkTemplate .checkbox td, .hkTemplate th {
+	font-size: 9pt;
+}
+
+.hkTemplate p, .hkTemplate h6, .hkTemplate .sub_label, .hkTemplate .font_8px, .hkTemplate .date_input, .hkTemplate .note_sign, .hkTemplate td, .hkTemplate .subscript_text  {
+	font-size: 8pt;
+}
+
+.hkTemplate p > span {
+	font-style: italic;
+}
+
+.hkTemplate footer {
+	font-size: 7pt;
+	position: inherit;
+   left:2.54cm;
+   bottom:0.80cm;
+   height:30px;
+   width:400px;
+}
+
+.hkTemplate  .page footer {
+	position: fixed;
+}
+
+.hkTemplate  .footer-right{
+	font-size: 7pt;
+	text-align: right;
+}
+/********* General alignment **********/
+
+/********** styling check *********/
+
+.hkTemplate table, .hkTemplate th, .hkTemplate td {
+  border: 1px solid black;
+}
+
+.hkTemplate table {
+	padding-bottom: 8px;
+}
+
+/************ Header ************/
+.hkTemplate .form_logo {
+	position: absolute;
+	display: inline-block;
+}
+
+.hkTemplate img.logo  {
+	width: 2.12cm;
+	height: 1.43cm;
+}
+
+.hkTemplate #title_spaced {
+	letter-spacing: 5px;
+}
+
+.hkTemplate  .form_title {
+	position: relative;
+	text-align: center;
+	margin: auto;
+}
+
+.hkTemplate #title_chinese {
+	letter-spacing: 3px;
+}
+
+.hkTemplate  .form-sign{
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.hkTemplate  .nd2a{
+	text-align: right;
+	width: 105px;
+	font-size: 28pt;
+	font-weight: bold;
+	margin-right: 0px;
+	height: 33pt;
+}
+
+.hkTemplate  .form-container {
+	height: 45px;
+}
+
+.hkTemplate  .form_input_container, .hkTemplate .form-container, .hkTemplate .row {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+	justify-content: flex-end;
+}
+
+.hkTemplate  .company_input_num {
+	text-align: center;
+	font-weight: bold;
+	width: 190px;
+	right: 0px;
+}
+
+.hkTemplate  .row_header, .hkTemplate .row_left_align {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+.hkTemplate 
+.hkTemplate .c_i_num {
+	margin-left: auto;
+	direction: rtl;
+	text-align: center;
+}
+
+.hkTemplate  .continuation {
+	border: solid 2px black;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.hkTemplate  .comp_num > label{
+	margin-right: 20px;
+}
+/********* Notes ************/
+.hkTemplate .note_sign {
+	margin-right: 500px;
+	margin-top: auto;
+	display: inline;
+  white-space: nowrap;
+}
+
+.hkTemplate  .note_img, .hkTemplate .note_img_capacity {
+	margin-left: -60px;
+	display: inline-block;
+}
+
+.hkTemplate  .note_img {
+	margin-right: 20px;
+	padding-right: 24px;
+	height: 16px;
+}
+
+.hkTemplate  .note_img_capacity {
+	margin-right: 24px;
+	height: 16px;
+}
+
+.hkTemplate #note_24 {
+	width: 660px;
+}
+
+/********* Form types **********/
+
+
+.hkTemplate .checkbox {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+	justify-content: space-between;
+	padding-bottom: 4px;
+}
+
+.hkTemplate  .box {
+	width: 100px;
+}
+
+.hkTemplate  .wider_box {
+	width: 200px;
+}
+
+.hkTemplate  .yes-no-checkbox {
+	display: block;
+}
+
+.hkTemplate  .input-checkbox input,
+.hkTemplate .input-checkbox label,
+.hkTemplate .wider_box input,
+.hkTemplate .wider_box label,
+.hkTemplate .narrow_box input,
+.hkTemplate .narrow_box label,
+.hkTemplate .box input,
+.hkTemplate .box label {
+  display: inline-flex;
+  margin-bottom: 0;
+  vertical-align: middle; /* Fixes any weird issues in Firefox and IE */
+}
+
+.hkTemplate  .yes-no-checkbox input,
+.hkTemplate .yes-no-checkbox label {
+	display: table-header-group;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.hkTemplate  .row_middle {
+	text-align: center;
+}
+
+.hkTemplate  .main_label, .hkTemplate .small_label {
+	margin-right: auto;
+	vertical-align: baseline;
+	max-width: 590px;
+}
+
+.hkTemplate  .sub_label {
+	text-align: right;
+}
+
+.hkTemplate  .subscript_text {
+	text-align: center;
+	width: 200px;
+}
+
+.hkTemplate  input {
+	display: block;
+	text-align: center;
+}
+
+.hkTemplate  .input_one_num {
+	width: 29px;
+	height: 30px;
+}
+
+.hkTemplate  .input_identification {
+	display: inline-flex;
+	padding-right: 4.5px;
+}
+
+.hkTemplate  .input_one_num_large {
+	width: 43px;
+	height: 30px;
+}
+
+.hkTemplate  .input_identification_large {
+	display: inline-flex;
+	padding-left: 5.5px;
+}
+
+.hkTemplate  .input-ddmmyyyy, .hkTemplate .input_300px {
+	height: 25px;
+}
+
+.hkTemplate  .input_300px, .hkTemplate .input-500px, .hkTemplate .input-460px, .hkTemplate .input-190px {
+	height: 30px;
+}
+
+.hkTemplate 
+.hkTemplate .input-ddmmyyyy {
+	width: 100px;
+}
+
+.hkTemplate  .input-190px {
+	width: 190px;
+}
+
+.hkTemplate  .input-460px {
+	width: 460px;
+}
+
+.hkTemplate  .input-500px-high {
+	width: 500px;
+	height: 40px;
+}
+
+.hkTemplate  .input-500px {
+	width: 500px;
+}
+
+.hkTemplate  .input_300px {
+	width: 300px;
+}
+
+.hkTemplate  .input_custom {
+	width: 110px;
+	height: 24px;
+}
+
+.hkTemplate  .input_presentor {
+	display: inherit;
+}
+
+.hkTemplate 
+.hkTemplate .input_field_narrow {
+	height: 24px;
+	width: 220px
+}
+
+.hkTemplate  .input_field_large {
+	height: 50px;
+	width: 230px;
+}
+
+.hkTemplate  .row_reference {
+	display: flex;
+}
+
+.hkTemplate  .presentor_reference {
+	width: 330px;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+}
+
+.hkTemplate #contour_left {
+	border-right: solid 2px black;
+}
+
+.hkTemplate  .presentor_input {
+	display: flex;
+	padding-bottom: 1.5px;
+	justify-content: flex-start;
+	text-align: left;
+}
+
+.hkTemplate  .date_input {
+	text-align: center;
+}
+
+.hkTemplate  .underline {
+	border-bottom: solid 2px black;
+}
+
+.hkTemplate  .input_full_width {
+	width: 658px;
+	height: 64px;
+	line-height: 1;
+	margin: 0;
+	padding: 4px;
+}
+
+.hkTemplate  .checkbox td {
+	text-align: left;
+}
+
+.hkTemplate  .id-passport-num {
+	text-align: center;
+}
+
+/************** List format **********/
+ol, .hkTemplate ul, .hkTemplate li{
+	list-style-type: decimal;
+}
+
+.hkTemplate  .uppercase-list li {
+	list-style-type: upper-alpha;
+}
+
+.hkTemplate  .small_case_list li {
+	list-style-type: lower-latin;
+	list-style-position: inside;
+}
+
+.hkTemplate  .list-item {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.hkTemplate  .no_margin {
+	margin-right: 2px;
+}
+
+.hkTemplate  .narrow_spacing {
+	word-spacing: -0.4px;
+}
+
+/********** Styling notes ************/
+/*title*/
+.hkTemplate .page_note p {
+	font-size: 10pt;
+	display: inline-block;
+	margin-left: 0.8cm;
+}
+
+.hkTemplate  .page_note p > span{
+	font-weight: bold;
+	font-style: italic;
+}
+
+.hkTemplate  .notice_title {
+	display: block;
+	text-align: center;
+	padding-bottom: 12px;
+}
+
+.hkTemplate  .notice_title h4 {
+	padding-bottom: 12px;
+}
+
+.hkTemplate  .num_list_note li{
+	/*list-style-position: inside;*/
+	margin-left: 0.9cm;
+	/*margin-right: 0.9cm;*/
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: justify;
+	font-size: 10pt;
+}
+
+.hkTemplate  li > span {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.hkTemplate  .letter-list-note li {
+	list-style-type: lower-latin;
+	/*list-style-position: inside;*/
+	margin-left: 1.2cm;
+	margin-bottom: 15px;
+	text-align: justify;
+	font-size: 10pt;
+}
+
+.hkTemplate  .letter-list-note p {
+	margin-left: 0.9cm;
+	text-align: justify;
+}
+
+.hkTemplate 
+/*table*/
+.hkTemplate table {
+	/*max-width: 100%;*/
+	width: 100%;
+	border: solid 1px black;
+}
+
+.hkTemplate  table.alternate_to {
+	width: 190px;
+}
+
+.hkTemplate  table.alternate_to th {
+	height: 16px;
+}
+
+.hkTemplate  table.alternate_to input{
+	height: 40px;
+}
+
+.hkTemplate  th {
+	text-align: left;
+	empty-cells: show;
+	height: 30px;
+	vertical-align: center;
+}
+
+.hkTemplate  td {
+	empty-cells: show;
+	text-align: right;
+	vertical-align: center;
+}
+
+.hkTemplate  .row_table th{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.hkTemplate  .row_table {
+	height: 42px;
+}
+
+/* SIGNATURE */
+.hkTemplate .signature_frame {
+	border: solid 1px black;
+}
+
+.hkTemplate  .input_signature {
+	height: 40px;
+	width: 450px;
+}
+
+.hkTemplate  .signature-bottom label,
+.hkTemplate .signature-bottom input {
+	/*display text on bottom cell*/
+	display: inline-flex;
+	margin-bottom: 0px;
+	vertical-align: text-bottom;
+	margin-right: 40px;
+}
+
+.hkTemplate  .input_open_field {
+	width: 220px;
+	height: 35px;
+}
+
+.hkTemplate  .open_bottom label,
+.hkTemplate .open_bottom input {
+	/*display text on bottom cell*/
+	display: inline-flex;
+	margin-bottom: 0px;
+	vertical-align: text-bottom;
+	margin-right: 9.3px;
+}
+
+.hkTemplate  .director-sub {
+	width: 240px;
+	text-align: center;
+	margin-left: 90px;
+}
+
+.hkTemplate  .align-right {
+	margin-left: 80px;
+	margin-right: 0px;
+	text-align: right;
+}
+
+/**/
+
+.hkTemplate .continuation_table th,
+.hkTemplate .continuation_table td{
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.hkTemplate  .input_164px {
+	width: 164px;
+}
+
+.hkTemplate  .continuation_table td{
+	text-align: center;
+	width: 164px;
+}
+
+.hkTemplate  .table_advise {
+	border: solid 1px black;
+}
+
+.hkTemplate  .table_notice th{
+	text-align: center;
+}
+
+.hkTemplate  .table_notice td{
+	text-align: left;
+	padding-left: 12px;
+}
+
+.hkTemplate  .table_notice {
+	width: 600px;
+	margin-bottom: 30px;
+	margin-left: 0.9cm;
+}
+
+.hkTemplate  .table_notice p {
+	margin-left: 2px;
+}
+
+.hkTemplate  .border-top {
+	border-top: solid 1px black;
+}
+
+.hkTemplate  .indented_p8 {
+	margin-left: 32px;
+}
+
+.hkTemplate  .set-width {
+	width: 500px;
+}

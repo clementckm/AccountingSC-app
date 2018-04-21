@@ -1,0 +1,6 @@
+/*
+ *
+ * SalaryModule actions
+ *
+ */
+

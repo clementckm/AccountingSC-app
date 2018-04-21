@@ -1,0 +1,153 @@
+{
+  "private": {
+    "isDevelopmentServer" : false,
+    "forceStopEnrollmentEmail" : false,
+    "disableSolcCompile"    : true,
+    "demoCompany"         : "xxxxxxxxxx",
+    "rubbishAccount"      : "xxxxxxxxxx",
+    "gasMultiplier"       : 10,
+    "ethereum"            :{
+      "host"              : "xxxxxxxxxx",
+      "password"          : "xxxxxxxxxx",
+      "contractGasLimit"  : 4712388
+    },
+    "MailChimp": {
+      "apiKey"            : "xxxxxxxxxx",
+      "listId"            : "xxxxxxxxxx"
+    },
+
+    "awsS3": {
+      "bucket"              : "xxxxxxxxxx",
+      "region"              : "xxxxxxxxxx",
+      "AWSAccessKeyId"      : "xxxxxxxxxx",
+      "AWSSecretAccessKey"  : "xxxxxxxxxx",
+      "acl"                 : "private"
+    },
+    "stripe": {
+      "SG": {
+        "testSecretKey": "xxxxxxxxxx",
+        "liveSecretKey": "xxxxxxxxxx",
+        "testing": true
+      },
+      "US": {
+        "testSecretKey": "xxxxxxxxxx",
+        "liveSecretKey": "xxxxxxxxxx",
+        "testing": true
+      },
+      "UK": {
+        "testSecretKey": "xxxxxxxxxx",
+        "liveSecretKey": "xxxxxxxxxx",
+                "testing": true
+      },
+      "HK": {
+        "testSecretKey": "xxxxxxxxxx",
+        "liveSecretKey": "xxxxxxxxxx",
+        "testing": true
+      }
+    },
+    "slackToken":"xxxxxxxxxx",
+    "kadira":{
+
+    },
+    "otoUtil": {
+      "errorLogKey": "xxxxxxxxxx"
+    },
+
+    "storageServices": {
+      "s3": {
+        "endpoint": "xxxxxxxxxx",
+        "s3ForcePathStyle": true,
+        "accessKeyId": "xxxxxxxxxx",
+        "secretAccessKey": "xxxxxxxxxx",
+        "sslEnabled": false,
+        "signatureVersion": "xxxxxxxxxx",
+        "region": "xxxxxxxxxx"
+      }
+    },
+
+   "logger": {
+      "level": "verbose"
+    },
+
+    "mailgun": {
+      "username": "xxxxxxxxxx",
+      "password": "xxxxxxxxxx",
+      "server": "xxxxxxxxxx",
+      "port": 587
+    }
+  },
+  "public": {
+    "isDemoServer"        : false,
+    "isDevelopmentServer" : false,
+    "isTestingServer"     : false,
+    "ethereumHost"        : "xxxxxxxxxx",
+    "ethereumPassword"    : "xxxxxxxxxx",
+    "gasAmtTxns"          : 3000000,
+    "ipfsHost"            : "xxxxxxxxxx",
+    "ipfsPort"            : "xxxxxxxxxx",
+    "personaVersion"      : 2,
+    "stripe": {
+      "SG": {
+        "testPublishableKey": "xxxxxxxxxx",
+        "livePublishableKey": "xxxxxxxxxx",
+        "testing": true
+      },
+      "US": {
+        "testPublishableKey": "xxxxxxxxxx",
+        "livePublishableKey": "xxxxxxxxxx",
+        "testing": true
+      },
+      "UK": {
+        "testPublishableKey": "xxxxxxxxxx",
+        "livePublishableKey": "xxxxxxxxxx",
+        "testing": true
+      },
+      "HK": {
+        "testPublishableKey": "xxxxxxxxxx",
+        "livePublishableKey": "xxxxxxxxxx",
+        "testing": true
+      }
+    },
+    "analyticsSettings": {
+      "Google Analytics" : {"trackingId": "xxxxxxxxxx"}
+    },
+    "ethereum"            :{
+      "host"              : "xxxxxxxxxx",
+      "password"          : "xxxxxxxxxx",
+      "contractGasLimit"  : 4712388
+    },
+    "stripe": {
+      "SG": {
+        "testPublishableKey": "xxxxxxxxxx",
+        "livePublishableKey": "xxxxxxxxxx",
+        "testing": true
+      },
+      "US": {
+        "testPublishableKey": "xxxxxxxxxx",
+        "livePublishableKey": "xxxxxxxxxx",
+        "testing": true
+      }
+    },
+    "otoRecoveryAgents"   :[
+      "jan-arie@otonomos.com",
+      "regina@otonomos.com",
+      "jessica@otonomos.com",
+      "mano@otonomos.com",
+      "rick@otonomos.com"
+    ],
+    "storageServices": {
+      "s3": {
+        "endpoint": "xxxxxxxxxx",
+        "s3ForcePathStyle": true,
+        "accessKeyId": "xxxxxxxxxx",
+        "secretAccessKey": "xxxxxxxxxx",
+        "sslEnabled": false,
+        "signatureVersion": "xxxxxxxxxx",
+        "region": "xxxxxxxxxx"
+      }
+    },
+    "logger": {
+      "level": "verbose"
+    }   
+  }
+}

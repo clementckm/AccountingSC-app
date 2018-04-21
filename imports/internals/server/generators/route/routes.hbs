@@ -1,0 +1,10 @@
+{{camelCase routeType}}.route('/{{properCase name}}', {
+  name: '{{camelCase name}}',
+  action() {
+    mount({{properCase layoutType}}, {
+      main: <{{properCase name }}/>,
+    });
+  },
+});
+
+//add_new_route
